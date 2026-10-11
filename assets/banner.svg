@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Huda Mueen. Calibrated AI for infrastructure and autonomy.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fdf8f5"/>
+      <stop offset="1" stop-color="#fbe3ea"/>
+    </linearGradient>
+    <g id="blossom">
+      <g fill="#fbd5de" stroke="#d9728f" stroke-width="1">
+        <ellipse cx="0" cy="-12" rx="8" ry="12"/>
+        <ellipse cx="0" cy="-12" rx="8" ry="12" transform="rotate(72)"/>
+        <ellipse cx="0" cy="-12" rx="8" ry="12" transform="rotate(144)"/>
+        <ellipse cx="0" cy="-12" rx="8" ry="12" transform="rotate(216)"/>
+        <ellipse cx="0" cy="-12" rx="8" ry="12" transform="rotate(288)"/>
+      </g>
+      <circle r="4" fill="#d9728f"/>
+    </g>
+    <clipPath id="card"><rect x="40" y="40" width="1100" height="236" rx="18"/></clipPath>
+    <clipPath id="typed">
+      <rect x="80" y="190" width="640" height="34">
+        <animate attributeName="width" values="0;0;640;640;0" keyTimes="0;0.08;0.4;0.9;1" dur="12s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: 'IBM Plex Mono','SFMono-Regular',Consolas,'Courier New',monospace; }
+    .sans { font-family: 'Space Grotesk','IBM Plex Sans','Segoe UI',Arial,sans-serif; }
+    .draw { animation: draw 6s ease-in-out infinite; }
+    @keyframes draw { 0% { stroke-dasharray: 520; stroke-dashoffset: 520; } 55%, 85% { stroke-dasharray: 520; stroke-dashoffset: 0; } 100% { stroke-dasharray: 520; stroke-dashoffset: -520; } }
+    .band { animation: breathe 6s ease-in-out infinite; transform-origin: 936px 150px; }
+    @keyframes breathe { 0%, 100% { transform: scaleY(0.55); opacity: 0.25; } 55% { transform: scaleY(1.1); opacity: 0.45; } }
+    .pt { animation: pt 6s ease-in-out infinite; }
+    @keyframes pt { 0%, 8% { opacity: 0; } 20%, 85% { opacity: 1; } 100% { opacity: 0; } }
+    .fall1 { animation: fall 9s linear infinite; }
+    .fall2 { animation: fall 12s linear infinite; animation-delay: -4s; }
+    .fall3 { animation: fall 10s linear infinite; animation-delay: -7s; }
+    .fall4 { animation: fall 14s linear infinite; animation-delay: -2s; }
+    @keyframes fall {
+      0%   { transform: translate(0, -40px) rotate(0deg); opacity: 0; }
+      10%  { opacity: 0.9; }
+      50%  { transform: translate(-40px, 120px) rotate(160deg); }
+      90%  { opacity: 0.9; }
+      100% { transform: translate(10px, 300px) rotate(340deg); opacity: 0; }
+    }
+    .cursor { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
+    .sway { animation: sway 5s ease-in-out infinite; }
+    @keyframes sway { 0%, 100% { transform: rotate(-8deg); } 50% { transform: rotate(8deg); } }
+  </style>
+
+  <rect width="1200" height="320" fill="url(#bg)"/>
+
+  <rect x="52" y="52" width="1100" height="236" rx="18" fill="#f7b6c8"/>
+  <rect x="40" y="40" width="1100" height="236" rx="18" fill="#fffaf7" stroke="#d9728f" stroke-width="2"/>
+
+  <!-- falling petals, clipped to the card -->
+  <g clip-path="url(#card)">
+    <g transform="translate(700 20)"><g class="fall1"><use href="#blossom" transform="scale(0.5)"/></g></g>
+    <g transform="translate(880 20)"><g class="fall2"><use href="#blossom" transform="scale(0.4)"/></g></g>
+    <g transform="translate(1040 20)"><g class="fall3"><use href="#blossom" transform="scale(0.55)"/></g></g>
+    <g transform="translate(600 20)"><g class="fall4"><ellipse rx="6" ry="3.5" fill="#f7b6c8"/></g></g>
+  </g>
+
+  <g transform="translate(1085 78) scale(1.1)"><g class="sway"><use href="#blossom"/></g></g>
+
+  <!-- text -->
+  <text class="mono" x="80" y="88" font-size="16" fill="#d9728f" letter-spacing="2">hudasol<tspan class="cursor">_</tspan></text>
+  <text class="sans" x="80" y="172" font-size="84" font-weight="700" fill="#5b3a4a" letter-spacing="-2">HUDA MUEEN</text>
+  <g clip-path="url(#typed)">
+    <text class="sans" x="80" y="214" font-size="26" fill="#5b3a4a">Calibrated AI for infrastructure and autonomy.</text>
+  </g>
+  <text class="mono" x="80" y="250" font-size="15" fill="#a8788a" letter-spacing="1">DATA SCIENCE AND AI  /  AUTONOMY  /  UAE INFRASTRUCTURE</text>
+
+  <!-- signal with a breathing uncertainty band -->
+  <polygon class="band" points="760,162 805,130 850,178 895,106 940,159 985,92 1030,140 1075,108 1112,124 1112,172 1075,152 1030,180 985,128 940,191 895,134 850,202 805,150 760,178"
+           fill="#f7b6c8" fill-opacity="0.45" stroke="#d9728f" stroke-opacity="0.5" stroke-width="1" stroke-dasharray="4 4"/>
+  <polyline class="draw" points="760,170 805,140 850,190 895,120 940,175 985,110 1030,160 1075,130 1112,148"
+            fill="none" stroke="#d9728f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <g class="pt" fill="#fffaf7" stroke="#d9728f" stroke-width="2.5">
+    <circle cx="760" cy="170" r="4.5"/><circle cx="805" cy="140" r="4.5"/><circle cx="850" cy="190" r="4.5"/>
+    <circle cx="895" cy="120" r="4.5"/><circle cx="940" cy="175" r="4.5"/><circle cx="985" cy="110" r="4.5"/>
+    <circle cx="1030" cy="160" r="4.5"/><circle cx="1075" cy="130" r="4.5"/><circle cx="1112" cy="148" r="4.5"/>
+  </g>
+  <text class="mono" x="760" y="250" font-size="14" fill="#a8788a">signal and uncertainty</text>
+</svg>
