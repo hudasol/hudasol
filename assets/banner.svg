@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Huda Mueen. AI that says what it knows, and what it does not.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fdf8f5"/>
+      <stop offset="1" stop-color="#fbe3ea"/>
+    </linearGradient>
+    <g id="blossom">
+      <g fill="#fbd5de" stroke="#d9728f" stroke-width="1">
+        <ellipse cx="0" cy="-12" rx="8" ry="12"/>
+        <ellipse cx="0" cy="-12" rx="8" ry="12" transform="rotate(72)"/>
+        <ellipse cx="0" cy="-12" rx="8" ry="12" transform="rotate(144)"/>
+        <ellipse cx="0" cy="-12" rx="8" ry="12" transform="rotate(216)"/>
+        <ellipse cx="0" cy="-12" rx="8" ry="12" transform="rotate(288)"/>
+      </g>
+      <circle r="4" fill="#d9728f"/>
+    </g>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bg)"/>
+
+  <!-- soft pearl card with pink offset shadow -->
+  <rect x="52" y="52" width="1100" height="236" rx="18" fill="#f7b6c8"/>
+  <rect x="40" y="40" width="1100" height="236" rx="18" fill="#fffaf7" stroke="#d9728f" stroke-width="2"/>
+
+  <!-- falling petals -->
+  <use href="#blossom" transform="translate(1085 78) scale(1.1)"/>
+  <use href="#blossom" transform="translate(1010 250) scale(0.7) rotate(20)"/>
+  <use href="#blossom" transform="translate(690 66) scale(0.55) rotate(40)"/>
+  <ellipse cx="735" cy="236" rx="6" ry="3.5" fill="#fbd5de" transform="rotate(30 735 236)"/>
+  <ellipse cx="930" cy="76" rx="6" ry="3.5" fill="#f7b6c8" transform="rotate(-25 930 76)"/>
+
+  <!-- text -->
+  <text x="80" y="88" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,'Courier New',monospace" font-size="16" fill="#d9728f" letter-spacing="2">hudasol</text>
+  <text x="80" y="172" font-family="'Space Grotesk','IBM Plex Sans','Segoe UI',Arial,sans-serif" font-size="84" font-weight="700" fill="#5b3a4a" letter-spacing="-2">HUDA MUEEN</text>
+  <text x="80" y="214" font-family="'Space Grotesk','IBM Plex Sans','Segoe UI',Arial,sans-serif" font-size="24" fill="#5b3a4a">AI that says what it knows, and what it does not.</text>
+  <text x="80" y="250" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,'Courier New',monospace" font-size="15" fill="#a8788a" letter-spacing="1">DATA SCIENCE AND AI  /  AUTONOMY  /  UAE INFRASTRUCTURE</text>
+
+  <!-- signal with growing uncertainty band -->
+  <polygon points="760,162 805,130 850,178 895,106 940,159 985,92 1030,140 1075,108 1112,124 1112,172 1075,152 1030,180 985,128 940,191 895,134 850,202 805,150 760,178"
+           fill="#f7b6c8" fill-opacity="0.35" stroke="#d9728f" stroke-opacity="0.5" stroke-width="1" stroke-dasharray="4 4"/>
+  <polyline points="760,170 805,140 850,190 895,120 940,175 985,110 1030,160 1075,130 1112,148"
+            fill="none" stroke="#d9728f" stroke-width="3" stroke-linejoin="round"/>
+  <g fill="#fffaf7" stroke="#d9728f" stroke-width="2.5">
+    <circle cx="760" cy="170" r="4.5"/><circle cx="805" cy="140" r="4.5"/><circle cx="850" cy="190" r="4.5"/>
+    <circle cx="895" cy="120" r="4.5"/><circle cx="940" cy="175" r="4.5"/><circle cx="985" cy="110" r="4.5"/>
+    <circle cx="1030" cy="160" r="4.5"/><circle cx="1075" cy="130" r="4.5"/><circle cx="1112" cy="148" r="4.5"/>
+  </g>
+  <text x="760" y="250" font-family="'IBM Plex Mono','SFMono-Regular',Consolas,'Courier New',monospace" font-size="14" fill="#a8788a">signal and uncertainty</text>
+</svg>
