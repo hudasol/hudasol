@@ -73,7 +73,7 @@ Further work in progress covers sand and dune mobility for rovers, post quantum 
 **Focus areas:** GNSS and signal integrity, drone and robot safety, anomaly detection, calibration and uncertainty, geospatial analysis, district cooling analytics, edge ML, post quantum cryptography, evaluation harnesses and benchmarks.
 
 <img src="assets/divider.svg" alt="" width="100%"/>
-
+ 
 ## Activity 🌸
 
 <div align="center">
