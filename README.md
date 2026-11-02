@@ -16,7 +16,7 @@
 
 I am an AI engineer based in the United Arab Emirates. I build systems that report what they know and also what they do not know. In practice that means calibrated confidence, abstention when the evidence is thin, and evaluation that is pre registered, so the results can be checked and not just believed.
 
-My work sits where data science meets physical systems: GNSS interference, drone operations, building cooling, address resolution for Gulf cities, and early warning from real satellite data. I am also a cofounder and CTO of Kanban Studios, where I build products end to end.
+My work sits where data science meets physical systems: GNSS interference, drone operations, building cooling, address resolution for Gulf cities, and early warning from real satellite data.
 
 Every project below states plainly what is real, what is synthetic and what is still a proposal.
 
