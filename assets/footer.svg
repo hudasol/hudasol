@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 190" width="1200" height="190" role="img" aria-label="Thank you for visiting. Calibrated, candid and curious.">
+  <defs>
+    <g id="blossom"><g fill="#fbd5de" stroke="#d9728f" stroke-width="1"><ellipse cx="0" cy="-12" rx="8" ry="12" transform="rotate(0)"/><ellipse cx="0" cy="-12" rx="8" ry="12" transform="rotate(72)"/><ellipse cx="0" cy="-12" rx="8" ry="12" transform="rotate(144)"/><ellipse cx="0" cy="-12" rx="8" ry="12" transform="rotate(216)"/><ellipse cx="0" cy="-12" rx="8" ry="12" transform="rotate(288)"/></g><circle r="4" fill="#d9728f"/></g>
+    <linearGradient id="w1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbd5de"/><stop offset="1" stop-color="#f7b6c8"/></linearGradient>
+    <linearGradient id="w2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7b6c8"/><stop offset="1" stop-color="#ee9db5"/></linearGradient>
+    <linearGradient id="w3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ee9db5"/><stop offset="1" stop-color="#d9728f"/></linearGradient>
+    <linearGradient id="fbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fdf8f5"/><stop offset="1" stop-color="#fbe3ea"/></linearGradient>
+    <clipPath id="all"><rect width="1200" height="190"/></clipPath>
+  </defs>
+  <style>
+    .sans { font-family: 'Space Grotesk','IBM Plex Sans','Segoe UI',Arial,sans-serif; }
+    .mono { font-family: 'IBM Plex Mono','SFMono-Regular',Consolas,'Courier New',monospace; }
+    .w1 { animation: slide 22s linear infinite; }
+    .w2 { animation: slide 15s linear infinite reverse; }
+    .w3 { animation: slide 10s linear infinite; }
+    @keyframes slide { from { transform: translateX(0); } to { transform: translateX(-1200px); } }
+    .up { animation: up 9s ease-in infinite; }
+    @keyframes up { 0% { transform: translate(0, 40px) rotate(0deg); opacity: 0; } 15% { opacity: 0.9; } 85% { opacity: 0.9; } 100% { transform: translate(24px, -60px) rotate(200deg); opacity: 0; } }
+    .soft { animation: soft 5s ease-in-out infinite; }
+    @keyframes soft { 0%, 100% { opacity: 0.85; } 50% { opacity: 1; } }
+  </style>
+  <g clip-path="url(#all)">
+    <rect width="1200" height="190" fill="url(#fbg)"/>
+    <text class="sans soft" x="600" y="48" font-size="26" font-weight="700" text-anchor="middle" fill="#5b3a4a">Thank you for visiting</text>
+    <text class="mono" x="600" y="74" font-size="14" text-anchor="middle" fill="#a8788a" letter-spacing="2">CALIBRATED  /  CANDID  /  CURIOUS</text>
+    <g transform="translate(0 44)">
+      <g class="w1"><path d="M0,70 C150,34 450,106 600,70 C750,34 1050,106 1200,70 C1350,34 1650,106 1800,70 C1950,34 2250,106 2400,70 L2400,160 L0,160 Z" fill="url(#w1)" opacity="0.8"/></g>
+      <g class="w2"><path d="M0,84 C150,54 450,114 600,84 C750,54 1050,114 1200,84 C1350,54 1650,114 1800,84 C1950,54 2250,114 2400,84 L2400,160 L0,160 Z" fill="url(#w2)" opacity="0.8"/></g>
+      <g class="w3"><path d="M0,100 C150,76 450,124 600,100 C750,76 1050,124 1200,100 C1350,76 1650,124 1800,100 C1950,76 2250,124 2400,100 L2400,160 L0,160 Z" fill="url(#w3)" opacity="0.9"/></g>
+    </g>
+    <g transform="translate(180 160)"><g class="up"><use href="#blossom" transform="scale(0.4)"/></g></g>
+    <g transform="translate(470 170)"><g class="up" style="animation-delay:-3s"><use href="#blossom" transform="scale(0.32)"/></g></g>
+    <g transform="translate(760 164)"><g class="up" style="animation-delay:-6s"><use href="#blossom" transform="scale(0.45)"/></g></g>
+    <g transform="translate(1030 172)"><g class="up" style="animation-delay:-1.5s"><use href="#blossom" transform="scale(0.35)"/></g></g>
+  </g>
+</svg>
