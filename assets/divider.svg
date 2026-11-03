@@ -1,16 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 28" width="1200" height="28" role="presentation">
-  <line x1="0" y1="14" x2="520" y2="14" stroke="#f7b6c8" stroke-width="2" stroke-dasharray="2 8" stroke-linecap="round"/>
-  <g transform="translate(600 14)">
-    <g fill="#fbd5de" stroke="#d9728f" stroke-width="1">
-      <ellipse cx="0" cy="-7" rx="4.5" ry="7"/>
-      <ellipse cx="0" cy="-7" rx="4.5" ry="7" transform="rotate(72)"/>
-      <ellipse cx="0" cy="-7" rx="4.5" ry="7" transform="rotate(144)"/>
-      <ellipse cx="0" cy="-7" rx="4.5" ry="7" transform="rotate(216)"/>
-      <ellipse cx="0" cy="-7" rx="4.5" ry="7" transform="rotate(288)"/>
-    </g>
-    <circle r="2.6" fill="#d9728f"/>
-  </g>
-  <circle cx="560" cy="14" r="3" fill="#f7b6c8"/>
-  <circle cx="640" cy="14" r="3" fill="#f7b6c8"/>
-  <line x1="680" y1="14" x2="1200" y2="14" stroke="#f7b6c8" stroke-width="2" stroke-dasharray="2 8" stroke-linecap="round"/>
+  <defs>
+    <g id="blossom"><g fill="#fbd5de" stroke="#d9728f" stroke-width="1"><ellipse cx="0" cy="-12" rx="8" ry="12" transform="rotate(0)"/><ellipse cx="0" cy="-12" rx="8" ry="12" transform="rotate(72)"/><ellipse cx="0" cy="-12" rx="8" ry="12" transform="rotate(144)"/><ellipse cx="0" cy="-12" rx="8" ry="12" transform="rotate(216)"/><ellipse cx="0" cy="-12" rx="8" ry="12" transform="rotate(288)"/></g><circle r="4" fill="#d9728f"/></g>
+    <path id="spark" d="M0,-5 L1.2,-1.2 L5,0 L1.2,1.2 L0,5 L-1.2,1.2 L-5,0 L-1.2,-1.2 Z"/>
+  </defs>
+  <style>
+    .flowL { animation: flowL 2.4s linear infinite; }
+    .flowR { animation: flowR 2.4s linear infinite; }
+    @keyframes flowL { to { stroke-dashoffset: -20; } }
+    @keyframes flowR { to { stroke-dashoffset: 20; } }
+    .turn { animation: turn 18s linear infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes turn { to { transform: rotate(360deg); } }
+    .beat { animation: beat 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes beat { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.25); } }
+    .tw { animation: tw 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes tw { 0%, 100% { transform: scale(0.2); opacity: 0.1; } 50% { transform: scale(1); opacity: 1; } }
+  </style>
+  <line class="flowL" x1="0" y1="14" x2="520" y2="14" stroke="#f7b6c8" stroke-width="2" stroke-dasharray="2 8" stroke-linecap="round"/>
+  <g transform="translate(600 14)"><g class="beat"><g class="turn"><use href="#blossom" transform="scale(0.58)"/></g></g></g>
+  <circle class="beat" cx="560" cy="14" r="3" fill="#f7b6c8"/>
+  <circle class="beat" cx="640" cy="14" r="3" fill="#f7b6c8" style="animation-delay:-1.2s"/>
+  <line class="flowR" x1="680" y1="14" x2="1200" y2="14" stroke="#f7b6c8" stroke-width="2" stroke-dasharray="2 8" stroke-linecap="round"/>
+
+  <!-- petals drifting towards the centre -->
+  <ellipse rx="4" ry="2.4" fill="#fbd5de" stroke="#d9728f" stroke-width="0.7">
+    <animateMotion dur="7s" repeatCount="indefinite" path="M0,14 C150,2 300,26 540,14"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="7s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse rx="4" ry="2.4" fill="#fbd5de" stroke="#d9728f" stroke-width="0.7">
+    <animateMotion dur="9s" repeatCount="indefinite" path="M1200,14 C1050,26 900,2 660,14"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="9s" repeatCount="indefinite"/>
+  </ellipse>
+  <g transform="translate(250 8)"><use href="#spark" class="tw" fill="#d9728f"/></g>
+  <g transform="translate(940 20)"><use href="#spark" class="tw" fill="#d9728f" style="animation-delay:-1.4s"/></g>
+  <g transform="translate(110 20)"><use href="#spark" class="tw" fill="#f7b6c8" style="animation-delay:-0.7s"/></g>
+  <g transform="translate(1090 8)"><use href="#spark" class="tw" fill="#f7b6c8" style="animation-delay:-2.1s"/></g>
 </svg>
