@@ -175,7 +175,7 @@ My evaluation loop is deliberately strict, because a clever result that cannot b
 
 <img src="https://streak-stats.demolab.com?user=hudasol&background=fffaf7&ring=d9728f&fire=f7b6c8&currStreakLabel=d9728f&currStreakNum=5b3a4a&sideNums=5b3a4a&sideLabels=a8788a&dates=a8788a&stroke=f7b6c8&border=f7b6c8" alt="Contribution streak"/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=hudasol&bg_color=fffaf7&color=d9728f&line=f7b6c8&point=5b3a4a&area=true&area_color=f7b6c8&hide_border=true&hide_title=true" alt="Contribution activity graph" width="100%"/>
+<img src="https://ghchart.rshah.org/d9728f/hudasol" alt="Contribution calendar for the last year" width="100%"/>
 
 </div>
 
